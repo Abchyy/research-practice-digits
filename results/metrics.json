@@ -1,0 +1,34 @@
+{
+  "split_counts": {
+    "n_total": 1797,
+    "n_train": 1078,
+    "n_val": 359,
+    "n_test": 360,
+    "train_frac": 0.5999,
+    "val_frac": 0.1998,
+    "test_frac": 0.2003,
+    "random_state": 42
+  },
+  "val_metrics": {
+    "dummy": {
+      "accuracy": 0.10027855153203342,
+      "macro_f1": 0.018227848101265823
+    },
+    "logreg": {
+      "accuracy": 0.9665738161559888,
+      "macro_f1": 0.9664526287943161
+    },
+    "random_forest": {
+      "accuracy": 0.9693593314763231,
+      "macro_f1": 0.9692855580827899
+    }
+  },
+  "chosen_model": "random_forest",
+  "selection_criterion": "val_macro_f1",
+  "test_metrics": {
+    "accuracy": 0.9666666666666667,
+    "macro_f1": 0.9665384091991565
+  },
+  "final_train_time_sec": 0.31805169800099975,
+  "notes": "Preprocessors/models fit on train only during candidate comparison; final model refit on train+val; test used once for reporting."
+}
